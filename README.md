@@ -1,6 +1,6 @@
-﻿# PSD 自动化图层命名工具
+﻿# PSD 自动化标注
 
-基于 Google Gemini 2.5 Pro 的 Live2D/插画 PSD 文件自动图层命名系统。
+基于 Google Gemini 2.5 Pro 的 Live2D/插画 PSD 文件自动图层标注。
 
 ## 1. 项目目标
 - 批量处理指定目录下的 PSD 文件。
