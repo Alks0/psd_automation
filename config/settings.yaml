@@ -1,0 +1,51 @@
+gemini:
+  model: "gemini-2.5-pro"
+  temperature: 0.2
+  top_k: 40
+  top_p: 0.95
+  max_output_tokens: 6400
+
+api_keys:
+  - name: key1
+    key: "${GEMINI_KEY_1}"
+    max_concurrency: 3
+    rpm: 15
+  - name: key2
+    key: "${GEMINI_KEY_2}"
+    max_concurrency: 3
+    rpm: 15
+  - name: key3
+    key: "${GEMINI_KEY_3}"
+    max_concurrency: 3
+    rpm: 15
+  - name: key4
+    key: "${GEMINI_KEY_4}"
+    max_concurrency: 3
+    rpm: 15
+  - name: key5
+    key: "${GEMINI_KEY_5}"
+    max_concurrency: 3
+    rpm: 15
+
+processing:
+  include_hidden_layers: false
+  flatten_groups: true
+  max_psd_concurrent: 1
+  png_format: "PNG"
+  png_dpi: 72
+  retry:
+    max_attempts: 3
+    backoff_seconds: 5
+
+prompt:
+  template_path: "config/prompts/rename.txt"
+  output_format: "{psd}：{original} -> {new}"
+
+paths:
+  psd_dir: "psd"
+  tmp_dir: "tmp"
+  results_dir: "output/results"
+  log_file: "output/logs/dispatcher.log"
+
+logging:
+  level: "INFO"

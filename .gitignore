@@ -1,0 +1,103 @@
+# 环境变量和密钥文件
+.env
+.env.local
+.env.*.local
+*.key
+secrets/
+
+# Claude Code 配置
+.claude/
+
+# API 密钥备份
+*.bak
+
+# PSD 源文件（通常很大，不适合提交到 Git）
+psd/
+*.psd
+
+# 临时文件和缓存
+tmp/
+temp/
+cache/
+*.tmp
+
+# 输出结果
+output/
+results/
+*.json
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 图片输出（如果你想忽略生成的 PNG）
+# *.png
+# *.jpg
+# *.jpeg
